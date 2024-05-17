@@ -68,7 +68,7 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                use: ['@svgr/webpack', 'url-loader'],
+                use: ['@svgr/webpack'],
             },
             {
                 test: /\.m?js|map$/,

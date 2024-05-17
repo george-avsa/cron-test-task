@@ -73,3 +73,10 @@
         @include toRem(font-size, $desktop-1920);
     }
 }
+
+@mixin backdrop-filter($pxs) {
+    -webkit-backdrop-filter: blur($pxs);
+    -moz-backdrop-filter: blur($pxs);
+    -o-backdrop-filter: blur($pxs);
+    backdrop-filter: blur($pxs);
+}

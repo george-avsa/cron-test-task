@@ -1,14 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "App/layout/Layout";
 import NotFound from "App/layout/NotFound";
-import { useState } from "react";
+import Main from "Pages/Main/Main";
 
 function App() {
-    const [keklol, lolkek] = useState();
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
-                {/* <Route index element={<ComponentName />}></Route> */}
+                <Route index element={<Main />}></Route>
                 <Route path="*" element={<NotFound />}></Route>
             </Route>
         </Routes>
