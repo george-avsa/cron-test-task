@@ -1,0 +1,20 @@
+.rounded-link {
+
+    @extend .heading-s;
+    text-decoration: none;
+
+    &__body {
+        width: 250px;
+        height: 250px;
+        
+        border-radius: 50%;
+    
+        background-color: $orange;
+        color: $white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

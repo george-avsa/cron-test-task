@@ -1,0 +1,29 @@
+.navigation {
+    display: flex;
+    align-items: center;
+
+    margin-left: 130px;
+
+    &__link {
+        @extend .text-m;
+        text-decoration: none;
+
+        color: $white;
+
+        text-transform: uppercase;
+        
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &--active {
+            color: $orange;
+        }
+
+        transition: $transition;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
