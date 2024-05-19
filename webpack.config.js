@@ -40,14 +40,6 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                       loader: 'file-loader',
-                    },
-                ],
-            },
-            {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
                     loader: 'file-loader',
@@ -59,12 +51,7 @@ module.exports = {
             },
             {
                 test: /\.(mp4|png|jpe?g|gif|webp)$/,
-                use: {
-                    loader: "file-loader",
-                    options: {
-                        name: "[name].[hash].[ext]"
-                    }
-                }
+                use: ['file-loader']
             },
             {
                 test: /\.svg$/,

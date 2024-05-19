@@ -1,0 +1,75 @@
+.footer {
+    @include container();
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 60px;
+
+    @include adaptiveHardValues('padding-top', 60, 60, 100, 100, 100);
+    @include adaptiveHardValues('padding-bottom', 60, 60, 100, 100, 100);
+
+    &__title {
+        @extend .text;
+        color: $white;
+    }
+
+    &__line {
+        width: 2px;
+        height: 60px;
+
+        background-color: $white;
+    }
+
+    &__email {
+        @extend .heading-s;
+
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__partnership {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    &__adress {
+        span, a {
+            @extend .text;
+            text-align: center;
+            display: block;
+
+            color: $white;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+
+            del {
+                margin-right: 10px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__telegram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        row-gap: 20px;
+
+        span {
+            @extend .text;
+            color: $white;
+        }
+    }
+}

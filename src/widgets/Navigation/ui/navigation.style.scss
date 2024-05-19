@@ -1,8 +1,13 @@
 .navigation {
-    display: flex;
     align-items: center;
-
+    
     margin-left: 130px;
+    
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
 
     &__link {
         @extend .text-m;

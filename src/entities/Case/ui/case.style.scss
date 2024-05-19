@@ -1,0 +1,70 @@
+.case {
+    $root: &;
+
+    position: relative;
+    
+    width: 100%;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+
+    
+    &:hover {
+        #{$root}__info {
+            opacity: 1;
+        } 
+    }
+    
+    &__image {
+        width: 70%;
+        height: 100%;
+        
+        object-fit: contain;
+    }
+    
+    &__info {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        border-radius: 20px;
+        
+        opacity: 0;
+        transition: $transition;
+
+        cursor: pointer;
+
+        padding: 0 20px 30px 20px;
+
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @extend .heading-s;
+        color: $white;
+
+        &--black {
+            color: $black;
+        }
+    }
+    
+    &__text {
+        @extend .text;
+        color: $white;
+
+        margin-top: 20px;
+
+        &--black {
+            color: $black;
+        }
+    }
+}

@@ -1,11 +1,20 @@
 .rounded-link {
 
-    @extend .heading-s;
     text-decoration: none;
-
+    
     &__body {
-        width: 250px;
-        height: 250px;
+        @extend .text;
+
+        text-align: center;
+
+        width: 130px;
+        height: 130px;
+        
+        @include media-breakpoint-up(xl) {
+            width: 250px;
+            height: 250px;
+            font-size: 26px;
+        }
         
         border-radius: 50%;
     

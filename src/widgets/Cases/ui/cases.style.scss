@@ -1,0 +1,47 @@
+.cases {
+    @include container();
+    
+    &__content {
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    &__heading {
+        display: flex;
+        
+        flex-direction: column;
+        
+        @include media-breakpoint-up(xl) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        @extend .heading-xl;
+        color: $white;
+    }
+
+    &__filter-buttons {
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-up(xl) {
+            flex-direction: row;
+        }
+    }
+
+    &__filter-button {
+        align-self: flex-end;
+
+        margin-top: 20px;
+        
+        @include media-breakpoint-up(xl) {
+            align-self: auto;
+            margin-top: 0px;
+        }
+    }
+}
