@@ -1,24 +1,24 @@
 .fetch-error {
+  text-align: center;
+
+  p {
+    @extend .text;
     text-align: center;
+    color: $white;
 
-    p {
-        @extend .text;
-        text-align: center;
-        color: $white;
-
-        &:not(:first-child) {
-            margin-top: 12px;
-        }
-
-        &:last-child {
-            margin-top: 20px;
-            color: $orange;
-        }
+    &:not(:first-child) {
+      margin-top: 12px;
     }
 
-    img {
-        width: 80%;
-        max-width: 300px;
-        margin-top: 16px;
+    &:last-child {
+      margin-top: 20px;
+      color: $orange;
     }
-}   
+  }
+
+  img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 16px;
+  }
+}

@@ -8,25 +8,30 @@ import { useUnit } from "effector-react";
 import { useEffect } from "react";
 
 function Main() {
-    const {isLoadingCases} = useUnit($store);
-    const {fetchError} = useUnit($fetchedData);
+  const { isLoadingCases } = useUnit($store);
+  const { fetchError } = useUnit($fetchedData);
 
-    useEffect(() => {
-        fetchCases();
-    }, []);
+  useEffect(() => {
+    fetchCases();
+  }, []);
 
-    return (
-        <main className="main">
-            <RotatedBox side={45} rotationDegree={45} margin={60} additionalClass="main__rotated-box"></RotatedBox>
-            {isLoadingCases ? (
-                <Loader></Loader>
-            ) : fetchError ? (
-                <FetchError/>
-            ) : (
-                <Cases></Cases>
-            )}
-        </main>
-    );
+  return (
+    <main className="main">
+      <RotatedBox
+        side={45}
+        rotationDegree={45}
+        margin={60}
+        additionalClass="main__rotated-box"
+      ></RotatedBox>
+      {isLoadingCases ? (
+        <Loader></Loader>
+      ) : fetchError ? (
+        <FetchError />
+      ) : (
+        <Cases></Cases>
+      )}
+    </main>
+  );
 }
 
 export default Main;

@@ -1,34 +1,37 @@
 .text {
-    font-weight: 400;
-    font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .text-m {
-    font-weight: 400;
-    font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .heading-xl {
-    font-family: 'GothamPro-Black';
-    font-size: 90px;
-    font-weight: 700;
+  font-family: "GothamPro-Black";
+  font-size: 90px;
+  font-weight: 700;
 }
 
 .heading-m {
-    font-weight: 400;
-    @include rem-adaptive-font(42, 52, 52, 52, 72);
+  font-weight: 400;
+  @include rem-adaptive-font(42, 52, 52, 52, 72);
 }
 
 .heading-s {
-    font-weight: 400;
-    @include rem-adaptive-font(26, 26, 26, 26, 36);
+  font-weight: 400;
+  @include rem-adaptive-font(26, 26, 26, 26, 36);
 }
 
 .text-s {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.text, .text-m, .heading-m, .heading-s {
-    font-family: 'Gotham Pro';
+.text,
+.text-m,
+.heading-m,
+.heading-s {
+  font-family: "Gotham Pro";
 }

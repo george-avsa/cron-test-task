@@ -1,34 +1,34 @@
 .navigation {
-    align-items: center;
-    
-    margin-left: 130px;
-    
-    display: none;
+  align-items: center;
 
-    @include media-breakpoint-up(md) {
-        display: flex;
+  margin-left: 130px;
+
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  &__link {
+    @extend .text-m;
+    text-decoration: none;
+
+    color: $white;
+
+    text-transform: uppercase;
+
+    &:not(:first-child) {
+      margin-left: 20px;
     }
 
-    &__link {
-        @extend .text-m;
-        text-decoration: none;
-
-        color: $white;
-
-        text-transform: uppercase;
-        
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-
-        &--active {
-            color: $orange;
-        }
-
-        transition: $transition;
-
-        &:hover {
-            opacity: .8;
-        }
+    &--active {
+      color: $orange;
     }
+
+    transition: $transition;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
