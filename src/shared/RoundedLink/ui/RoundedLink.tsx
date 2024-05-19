@@ -1,8 +1,10 @@
-function RoundedLink() {
+import { Link } from "App/types/Link";
+
+function RoundedLink({children, href, target}: Link) {
     return (
-        <a href="#" className="rounded-link">
+        <a href={href} className="rounded-link" target={target} rel="noreferrer">
             <div className="rounded-link__body">
-                Оставить заявку
+                {children}
             </div>
         </a>
     );

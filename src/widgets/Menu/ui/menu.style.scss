@@ -112,6 +112,13 @@
         color: $orange;
         text-transform: capitalize;
     }
+    &--entering {
+        animation: slideFromLeft .5s;
+    }
+    
+    &--finishing {
+        animation: slideToLeft .5s;
+    }
 }
 
 @keyframes spinOnHoverIn {
@@ -130,5 +137,24 @@
 
     to {
         rotate: 0deg;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+@keyframes slideToLeft {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
     }
 }

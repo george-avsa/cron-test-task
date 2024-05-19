@@ -1,7 +1,11 @@
 .header {
     $root: &;
 
+    z-index: 20;
+
     position: fixed;
+    top: 0;
+    left: 0;
 
     width: 100%;
     

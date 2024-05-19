@@ -1,12 +1,18 @@
-import { navigationLinks } from 'Widgets/Navigation/ui/Navigation';
-import LogoBig from './../assets/LogoBig.svg';
-import CrossIcon from './../assets/CrossIcon.svg';
+import { $visibiltyStore, toggleVisibilty } from 'App/store/visibiltyStore';
+import Animation from 'Features/Animation/Animation';
 import RoundedLink from 'Shared/RoundedLink/ui/RoundedLink';
+import { navigationLinks } from 'Widgets/Navigation/ui/Navigation';
+import { useUnit } from 'effector-react';
+import CrossIcon from './../assets/CrossIcon.svg';
+import LogoBig from './../assets/LogoBig.svg';
 
 
 function Menu() {
+
+    const isMenuVisible = useUnit($visibiltyStore).isVisibleMenu;
+
     return (
-        <div className="menu">
+        <Animation baseClass="menu" conditionOnShow={isMenuVisible} duration={500}>
             <div className="menu__left">
                 <LogoBig />
                 <div className='menu__navigation'>
@@ -24,13 +30,16 @@ function Menu() {
                 </a>
             </div>
             <div className="menu__right">
-                <CrossIcon className='menu__cross' />
-                <a href="#" className='menu__telegram-link'>
+                <CrossIcon className='menu__cross' onClick={() => toggleVisibilty({isVisibleMenu: false})} />
+                <a href="https://t.me/georgeavsa" className='menu__telegram-link'>
                     Telegram
                 </a>
-                <RoundedLink></RoundedLink>
+                <RoundedLink
+                    href="https://t.me/georgeavsa"
+                    target="_blank"
+                >Связаться со мной</RoundedLink>
             </div>
-        </div>
+        </Animation>
     );
 }
 

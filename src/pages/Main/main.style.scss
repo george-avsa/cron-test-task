@@ -1,4 +1,8 @@
 .main {
     width: 100vw;
-    height: 100vh;
+    @include page();
+
+    &__rotated-box {
+        margin-bottom: 60px;
+    }
 }

@@ -5,12 +5,13 @@ type NavigationLink = {
     target?: '_blank',
 }
 
+// Оставил так, потому что нединамично
 export const navigationLinks: NavigationLink[] = [
     {text: 'Кейсы', url: '#', isActive: true},
     {text: 'Компания', url: '#', isActive: false},
     {text: 'Услуги', url: '#', isActive: false},
     {text: 'Контакты', url: '#', isActive: false},
-];    
+];
 
 function Navigation() {
     return (
