@@ -1,4 +1,4 @@
-import { CasesReponseOK, FiltersReponseOK } from "App/store/store";
+import { CasesReponseOK, FiltersReponseOK } from "App/store/types";
 import axios from "axios";
 
 const getRequest = (slug: string) => {
