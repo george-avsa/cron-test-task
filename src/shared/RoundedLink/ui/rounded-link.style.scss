@@ -1,29 +1,27 @@
 .rounded-link {
+  text-decoration: none;
 
-    text-decoration: none;
-    
-    &__body {
-        @extend .text;
+  &__body {
+    @extend .text;
 
-        text-align: center;
+    text-align: center;
 
-        width: 130px;
-        height: 130px;
-        
-        @include media-breakpoint-up(xl) {
-            width: 250px;
-            height: 250px;
-            font-size: 26px;
-        }
-        
-        border-radius: 50%;
-    
-        background-color: $orange;
-        color: $white;
+    width: 130px;
+    height: 130px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    @include media-breakpoint-up(xl) {
+      width: 250px;
+      height: 250px;
+      font-size: 26px;
     }
 
+    border-radius: 50%;
+
+    background-color: $orange;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,20 +1,19 @@
-$transition: all .2s ease-in;
+$transition: all 0.2s ease-in;
 
 @mixin page() {
-    @include adaptiveHardValues('padding-top', 56, 120, 120, 120, 120);
+  @include adaptiveHardValues("padding-top", 56, 120, 120, 120, 120);
 
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
 @mixin container() {
-    max-width: 1550px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1550px;
+  width: 100%;
+  margin: 0 auto;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    @include adaptiveHardValues('margin-top', 10, 100, 100, 100, 100);
-    @include adaptiveHardValues('padding-right', 16, 40, 60, 60, false);
-    @include adaptiveHardValues('padding-left', 16, 40, 60, 60, false);
+  @include adaptiveHardValues("margin-top", 10, 100, 100, 100, 100);
+  @include adaptiveHardValues("padding-right", 16, 40, 60, 60, false);
+  @include adaptiveHardValues("padding-left", 16, 40, 60, 60, false);
 }

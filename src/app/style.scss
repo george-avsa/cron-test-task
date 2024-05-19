@@ -1,17 +1,17 @@
-@import '~App/fonts/fonts.scss';
-@import '~App/styles/variables.scss';
-@import '~App/styles/breakpoints.scss';
-@import '~App/styles/colors.scss';
-@import '~App/styles/reset.scss';
-@import '~App/styles/mixins.scss';
-@import '~App/styles/typography.scss';
-@import '~App/styles/componentStyles.scss';
+@import "~App/fonts/fonts.scss";
+@import "~App/styles/variables.scss";
+@import "~App/styles/breakpoints.scss";
+@import "~App/styles/colors.scss";
+@import "~App/styles/reset.scss";
+@import "~App/styles/mixins.scss";
+@import "~App/styles/typography.scss";
+@import "~App/styles/componentStyles.scss";
 
 html {
-    background-color: $black;
+  background-color: $black;
 }
 
 .app {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }

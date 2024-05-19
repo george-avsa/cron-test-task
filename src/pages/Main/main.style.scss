@@ -1,8 +1,8 @@
 .main {
-    width: 100vw;
-    @include page();
+  width: 100vw;
+  @include page();
 
-    &__rotated-box {
-        margin-bottom: 60px;
-    }
+  &__rotated-box {
+    margin-bottom: 60px;
+  }
 }
