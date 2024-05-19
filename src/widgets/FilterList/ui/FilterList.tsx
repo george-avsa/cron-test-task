@@ -1,4 +1,5 @@
-import { $store, toggleFilterEvent } from "App/store/store";
+import { toggleFilterEvent } from "App/store/events";
+import { $store} from "App/store/store";
 import Filter, { FilterGroup } from "Entities/Filter/types";
 import { useUnit } from "effector-react";
 

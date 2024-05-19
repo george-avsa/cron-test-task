@@ -1,4 +1,5 @@
-import { $fetchedData, $store, resetFilters } from "App/store/store";
+import { resetFilters } from "App/store/events";
+import { $fetchedData, $store } from "App/store/store";
 import { $visibiltyStore, toggleVisibilty } from "App/store/visibiltyStore";
 import IntercativeButton from "Shared/InteractiveButton/ui/InteractiveButton";
 import { useUnit } from "effector-react";
